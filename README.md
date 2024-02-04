@@ -1,5 +1,7 @@
 # a1-cicd: Continuous Integration and Continuous Deployment
 
+### 🔗 [Link to Terraform-Repo](https://github.com/chaudharytrupal/a1-infra)
+
 ## Overview
 
 This repository contains instructions for setting up a continuous integration and continuous deployment (CI/CD) pipeline which is designed to deploy an application along with a MySQL database on Amazon EC2.
