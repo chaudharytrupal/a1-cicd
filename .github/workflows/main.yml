@@ -30,7 +30,7 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: my_db
-          IMAGE_TAG: v1
+          IMAGE_TAG: v2
         run: |
           echo "Building MySQL image..."
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .
@@ -40,7 +40,7 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: my_app
-          IMAGE_TAG: v1
+          IMAGE_TAG: v2
         run: |
           echo "Building Webserver image..."
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile .
